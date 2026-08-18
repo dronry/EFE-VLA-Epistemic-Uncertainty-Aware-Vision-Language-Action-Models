@@ -1,0 +1,21 @@
+# TensorFlow
+tensorflow==2.18.0
+tensorflow-datasets==4.9.7
+tensorflow-metadata==1.16.1
+tensorflow-io-gcs-filesystem
+protobuf==5.29.3
+gcsfs
+ml_dtypes>=0.5
+
+# PyTorch / OpenVLA
+transformers==4.44.2
+tokenizers==0.19.1
+timm==0.9.10
+peft
+accelerate
+bitsandbytes
+torchao
+
+# OpenVLA
+# Install separately from the cloned repository:
+# pip install -e /content/openvla
