@@ -1,32 +1,46 @@
-# EFE-VLA-Epistemic-Uncertainty-Aware-Vision-Language-Action-Models
-built an uncertainty-aware VLA fine-tuning method that learns input-dependent uncertainty alongside robot actions, using a heteroscedastic prediction head to identify difficult or visually ambiguous manipulation states and quantify when the policy's action predictions are less reliable
+# EFE-VLA: Epistemic Uncertainty-Aware Vision-Language-Action Models
 
+An uncertainty-aware VLA fine-tuning method that learns **robot actions and input-dependent uncertainty** together. A heteroscedastic prediction head estimates when action predictions are less reliable, particularly in difficult or visually ambiguous manipulation states.
+
+## Overview
+
+```text
 Visual + Language + Robot State
               ↓
           VLA Model
           ↙       ↘
       Action    Uncertainty
+```
 
-The goal is to identify difficult, ambiguous or potentially unreliable manipulation states, particularly under visual occlusion and distribution shift.
+## Key Features
 
-# Key Features
- > Uncertainty-aware VLA fine-tuning
- > Input-dependent action uncertainty
- > Evaluation on BridgeData V2
- > Analysis of uncertainty under occluded vs. open observations
+- Uncertainty-aware VLA fine-tuning
+- Input-dependent action uncertainty
+- Evaluation on **BridgeData V2**
+- Analysis of uncertainty under **occluded vs. open** observations
+- Designed for detecting difficult and potentially unreliable states
 
-# Installation
- git clone https://github.com/dronry/EFE-VLA-Epistemic-Uncertainty-Aware-Vision-Language-Action-Models.git
- cd EFE-VLA-Epistemic-Uncertainty-Aware-Vision-Language-Action-Models
- pip install -r requirements.txt
+## Installation
 
-Run
+```bash
+git clone https://github.com/dronry/EFE-VLA-Epistemic-Uncertainty-Aware-Vision-Language-Action-Models.git
+cd EFE-VLA-Epistemic-Uncertainty-Aware-Vision-Language-Action-Models
+pip install -r requirements.txt
+```
+
+## Run
+
+```bash
 python main.py
+```
 
 For evaluation:
 
+```bash
 python Evaluation.py
+```
 
 ## Research Goal
 
-Can a VLA model learn to recognize when its own action predictions are unreliable
+> **Can a VLA model learn to recognize when its own action predictions are unreliable?**
+
