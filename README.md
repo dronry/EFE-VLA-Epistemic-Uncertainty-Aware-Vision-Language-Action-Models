@@ -10,7 +10,7 @@ Visual + Language + Robot State
 The goal is to identify difficult, ambiguous or potentially unreliable manipulation states, particularly under visual occlusion and distribution shift.
 
 # Key Features
-> Uncertainty-aware VLA fine-tuning
+/> Uncertainty-aware VLA fine-tuning
 > Input-dependent action uncertainty
 > Evaluation on BridgeData V2
 > Analysis of uncertainty under occluded vs. open observations
